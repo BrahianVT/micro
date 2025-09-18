@@ -52,8 +52,12 @@ export default defineConfig({
       }
     ]
   },
+ // Ensure the service worker is included in the build
+  includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+  // This ensures sw.js is generated in the output directory
+  outDir: 'dist',
   devOptions: {
-    enabled: true
+    enabled: false
   }
 }),
   ],
