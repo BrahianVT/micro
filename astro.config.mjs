@@ -38,6 +38,7 @@ export default defineConfig({
     globIgnores: ['**/*.html'],
     navigateFallback: null,
     cleanupOutdatedCaches: true,
+    swDest: 'sw.js',
     runtimeCaching: [
       {
         urlPattern: /\//,
